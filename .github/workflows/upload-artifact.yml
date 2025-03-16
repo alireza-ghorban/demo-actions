@@ -29,7 +29,8 @@ jobs:
           python setup.py bdist_wheel  # Create a proper build output
 
       - name: Print Current Directory
-        run: echo "Current directory: $(pwd)"
+        run: |
+          echo "Current directory: $(pwd)"
 
       - name: Debug Build Output
         run: |
